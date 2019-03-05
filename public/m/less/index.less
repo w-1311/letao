@@ -1,35 +1,26 @@
-// 引入base.less
 @import 'base.less';
 
+/* 主体区域 */
 #main {
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
 
     /* 轮播图区域 */
-    // .slide {
-    //     a {
-    //         display: block;
+    // .slide {}
 
-    //         img {
-    //             width: 100%;
-    //         }
-    //     }
-    // }
-
-    /* 导航区域*/
+    /* 导航区域 */
     .nav {
         padding: .1rem;
-
-        // a {
-        //     display: block;
-
-        //     img {
-        //         width: 100%;
-        //     }
-        // }
     }
 
     /* 广告区域 */
     .banner {
-        padding: .1rem;
+        padding: 0 .1rem;
 
         .left {
             a {
@@ -45,10 +36,8 @@
 
         .right {
             a {
-                display: block;
-
                 img {
-                    width: 100%;
+
                     height: 2.4rem;
                 }
             }
@@ -57,60 +46,13 @@
 
     /* 品牌专区 运动专区 女士 男士专区 使用并集选择器*/
     .brand,
-    .sport {
+    .sport,
+    .women,
+    .man {
         padding: .1rem;
 
-        // .title {
-        //     a {
-        //         display: block;
+        .title {}
 
-        //         img {
-        //             width: 100%;
-        //         }
-        //     }
-        // }
-
-        // .content {
-        //     a {
-        //         display: block;
-
-        //         img {
-        //             width: 100%;
-        //         }
-        //     }
-        // }
-    }
-
-
-
-    .slide,
-    .nav,
-    .brand,
-    .sport {
-        a {
-            display: block;
-
-            img {
-                width: 100%;
-            }
-        }
-
-    }
-
-}
-
-
-/* 底部区域 */
-#footer {
-    background-color: @main-color;
-
-    a {
-        display: block;
-        height: .45rem;
-        color: #fff;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        .content {}
     }
 }
